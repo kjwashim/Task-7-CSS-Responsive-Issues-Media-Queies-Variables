@@ -1,0 +1,159 @@
+/* Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* ================= NAVBAR ================= */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+}
+
+/* Logo */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Menu */
+.menu a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: gray;
+}
+
+/* Username */
+.user {
+    background-color: #d9eefc;
+    padding: 8px 15px;
+    border-radius: 10px;
+    color: #007bff;
+}
+
+/* ================= HERO SECTION ================= */
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 5%;
+    height: 85vh;
+}
+
+/* Left Side */
+.left {
+    width: 50%;
+}
+
+.left h1 {
+    font-size: 48px;
+    line-height: 1.3;
+}
+
+.left span {
+    color: #1e90ff;
+}
+
+.left p {
+    color: gray;
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+/* Button */
+button {
+    padding: 12px 25px;
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Right Side */
+.right {
+    width: 45%;
+    text-align: center;
+}
+
+.right img {
+    width: 80%;
+}
+
+/* ================= TABLET VIEW ================= */
+
+@media (max-width: 992px) {
+
+    /* Navbar text smaller */
+    .logo,
+    .user,
+    .menu a {
+        font-size: 14px;
+    }
+
+    /* Hero text smaller */
+    .left h1 {
+        font-size: 36px;
+    }
+
+    .left p {
+        font-size: 16px;
+    }
+
+    /* Image smaller */
+    .right img {
+        width: 70%;
+    }
+}
+
+/* ================= MOBILE VIEW ================= */
+
+@media (max-width: 768px) {
+
+    /* Hide menu links */
+    .menu {
+        display: none;
+    }
+
+    /* Navbar spacing */
+    nav {
+        padding: 15px 5%;
+    }
+
+    /* Stack hero section */
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+    }
+
+    /* Full width */
+    .left,
+    .right {
+        width: 100%;
+    }
+
+    /* Smaller heading */
+    .left h1 {
+        font-size: 30px;
+    }
+
+    .left p {
+        font-size: 14px;
+    }
+
+    /* Smaller image */
+    .right img {
+        width: 60%;
+        margin-top: 20px;
+    }
+
+    /* Button smaller */
+    button {
+        padding: 10px 20px;
+    }
+}
