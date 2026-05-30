@@ -1,5 +1,8 @@
 # Task-7-CSS-Responsive-Issues-Media-Queies-Variables
 # Task-7
+
+This project is a responsive laundry service landing page built using HTML and CSS. The webpage includes a navigation bar and a hero section that adapts to different screen sizes using CSS Media Queries.
+
 # How to Run
 
 Clone the repository:
